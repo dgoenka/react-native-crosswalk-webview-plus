@@ -71,7 +71,7 @@ public class CrosswalkWebViewGroupManager extends ViewGroupManager<CrosswalkWebV
         settings.setAllowContentAccess(false);
         settings.setDatabaseEnabled(true);
 
-        settings.setCacheMode(XWalkSettings.LOAD_CACHE_ELSE_NETWORK);
+        settings.setCacheMode(XWalkSettings.LOAD_DEFAULT);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowFileAccessFromFileURLs(false);
             setAllowUniversalAccessFromFileURLs(crosswalkWebView, false);
