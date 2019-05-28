@@ -1,8 +1,5 @@
 'use strict';
 
-var version = '23.53.589.4';
-var beta    = '';
-
 var exec = require('child_process').exec;
 var fs   = require('fs');
 var wget = require('node-wget');
@@ -30,7 +27,7 @@ function handleDownloaded (error, data) {
 }
 
 function downloadLibrary () {
-    var url = 'https://download.01.org/crosswalk/releases/crosswalk/android/maven2/org/xwalk/xwalk_shared_library' + beta + '/' + version + '/xwalk_shared_library' + beta + '-' + version +'.aar';
+    var url = "https://download.01.org/crosswalk/releases/crosswalk/android/maven2/org/xwalk/xwalk_core_library/23.53.589.4/xwalk_core_library-23.53.589.4-64bit.aar";
     console.log('Downloading file...from'+url);
     wget(url, handleDownloaded);
 }
